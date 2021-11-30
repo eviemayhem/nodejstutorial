@@ -1,0 +1,18 @@
+<%- include('./partials/head.ejs') %>
+<body>
+  
+
+  <%- include('./partials/nav.ejs') %>
+
+  <div class="blogs content">
+    <h2>All Blogs</h2>
+  </div>
+</body>
+<%- include('./partials/footer.ejs') %>
+
+//blog form
+<form action="/blogs" method="POST">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="content" placeholder="Content">
+  <input type="submit" value="Submit">
+</html>
